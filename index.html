@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Sherif | Technical Support & QA Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .tab-btn.active {
+            background-color: #2563eb;
+            color: white;
+            border-color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-blue-600 selection:text-white">
+
+    <!-- Navbar Header -->
+    <header class="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400 font-bold text-xl">
+                    Y
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-white tracking-wide">يوسف شريف</h1>
+                    <p class="text-xs text-blue-400 font-medium">Technical Support & QA Specialist</p>
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <nav class="flex flex-wrap gap-2 bg-slate-950/60 p-1.5 rounded-xl border border-slate-800">
+                <button onclick="switchTab('about')" id="btn-about" class="tab-btn active px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200">
+                    <i class="fa-solid me-1.5 fa-user"></i> نبذة عني
+                </button>
+                <button onclick="switchTab('skills')" id="btn-skills" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold text-slate-400 hover:text-white transition-all duration-200">
+                    <i class="fa-solid me-1.5 fa-certificate"></i> المهارات والشهادات
+                </button>
+                <button onclick="switchTab('experience')" id="btn-experience" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold text-slate-400 hover:text-white transition-all duration-200">
+                    <i class="fa-solid me-1.5 fa-briefcase"></i> الخبرات والخدمات
+                </button>
+                <button onclick="switchTab('contact')" id="btn-contact" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold text-slate-400 hover:text-white transition-all duration-200">
+                    <i class="fa-solid me-1.5 fa-paper-plane"></i> التواصل المباشر
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-6xl mx-auto px-4 py-8 flex-grow w-full">
+
+        <!-- TAB 1: About Section -->
+        <section id="tab-about" class="tab-content space-y-8">
+            <div class="glass-card rounded-2xl p-6 md:p-10 relative overflow-hidden">
+                <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-600/10 rounded-full blur-3xl"></div>
+                <div class="relative z-10 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span> جاهز للعمل والفرص الجديدة
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+                        متخصص دعم فني وضمان جودة با خلفية تقنية ووعي سيبراني قوي
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-base md:text-lg">
+                        أجمع بين الخبرة العملية في حل المشكلات المعقدة والتعامل مع الشكاوى الصعبة، وبين الفهم التقني العميق لأساسيات تقنية المعلومات (IT) والبرمجة ومفاهيم الأمن السيبراني. أهدف لضمان أفضل تجربة للمستخدم وتحسين جودة تقديم الخدمات داخل بيئة العمل.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+                            <i class="fa-solid fa-headset text-2xl text-blue-400 mb-2"></i>
+                            <h3 class="font-bold text-white text-base">دعم فني متقدم</h3>
+                            <p class="text-xs text-slate-400 mt-1">حل المشكلات الفنية والتعامل مع أصحاب الشكاوى المعقدة بسرعة ودقة.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+                            <i class="fa-solid fa-list-check text-2xl text-emerald-400 mb-2"></i>
+                            <h3 class="font-bold text-white text-base">ضمان الجودة (QA)</h3>
+                            <p class="text-xs text-slate-400 mt-1">متابعة وتقييم الأداء لضمان التزام الفريق بأعلى معايير الجودة.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800">
+                            <i class="fa-solid fa-shield-halved text-2xl text-indigo-400 mb-2"></i>
+                            <h3 class="font-bold text-white text-base">خلفية IT و أمن سيبراني</h3>
+                            <p class="text-xs text-slate-400 mt-1">معرفة برمجية مع شهادة معتمدة في أساسيات الأمن السيبراني من جامعة هارفارد.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: Skills & Certifications -->
+        <section id="tab-skills" class="tab-content hidden space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Certifications -->
+                <div class="glass-card rounded-2xl p-6 space-y-4">
+                    <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-award text-yellow-400"></i> الشهادات والتقديرات
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-blue-500/50 transition">
+                            <div class="flex items-start justify-between">
+                                <div>
+                                    <h3 class="font-bold text-white">CS50 CS: Fundamentals of Cybersecurity</h3>
+                                    <p class="text-sm text-blue-400 mt-0.5">Harvard University</p>
+                                </div>
+                                <span class="text-xs bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-1 rounded">معتمدة</span>
+                            </div>
+                            <p class="text-xs text-slate-400 mt-2">دراسة متعمقة لأساسيات تأمين البيانات، الشبكات، والحد من الثغرات.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-emerald-500/50 transition">
+                            <div class="flex items-start justify-between">
+                                <div>
+                                    <h3 class="font-bold text-white">شهادات تقدير وتميز في الدعم الفني</h3>
+                                    <p class="text-sm text-emerald-400 mt-0.5">شركات سابقة</p>
+                                </div>
+                                <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-1 rounded">تقدير أداء</span>
+                            </div>
+                            <p class="text-xs text-slate-400 mt-2">تكريمات جودة الأداء والسرعة في حل التذاكر والشكاوى الصعبة.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical & Core Skills -->
+                <div class="glass-card rounded-2xl p-6 space-y-4">
+                    <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-gears text-blue-400"></i> المهارات الأساسية
+                    </h2>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="p-3 bg-slate-900/50 rounded-lg border border-slate-800 text-sm font-medium text-slate-200 flex items-center gap-2">
+                            <i class="fa-solid fa-check text-blue-400"></i> حل الشكاوى الصعبة
+                        </div>
+                        <div class="p-3 bg-slate-900/50 rounded-lg border border-slate-800 text-sm font-medium text-slate-200 flex items-center gap-2">
+                            <i class="fa-solid fa-chart-line text-emerald-400"></i> تحليل وتطوير الأداء
+                        </div>
+                        <div class="p-3 bg-slate-900/50 rounded-lg border border-slate-800 text-sm font-medium text-slate-200 flex items-center gap-2">
+                            <i class="fa-solid fa-handshake text-indigo-400"></i> إنهاء الصفقات
+                        </div>
+                        <div class="p-3 bg-slate-900/50 rounded-lg border border-slate-800 text-sm font-medium text-slate-200 flex items-center gap-2">
+                            <i class="fa-solid fa-file-excel text-green-400"></i> MS Office الاحترافي
+                        </div>
+                        <div class="p-3 bg-slate-900/50 rounded-lg border border-slate-800 text-sm font-medium text-slate-200 flex items-center gap-2">
+                            <i class="fa-solid fa-code text-yellow-400"></i> أساسيات البرمجة
+                        </div>
+                        <div class="p-3 bg-slate-900/50 rounded-lg border border-slate-800 text-sm font-medium text-slate-200 flex items-center gap-2">
+                            <i class="fa-solid fa-network-wired text-purple-400"></i> أساسيات الـ IT
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: Experience & Services -->
+        <section id="tab-experience" class="tab-content hidden space-y-8">
+            <div class="glass-card rounded-2xl p-6 md:p-8 space-y-6">
+                <h2 class="text-2xl font-bold text-white border-b border-slate-800 pb-4">مجالات التخصص والخبرة</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-blue-400 flex items-center gap-2">
+                            <i class="fa-solid fa-headset"></i> الدعم الفني وتجربة المستخدم
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            إدارة وتحليل البلاغات والشكاوى المعقدة بمهنية عالية، والعمل على تقديم حلول جذرية تضمن رضا العميل والحفاظ على استمرارية الخدمة.
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-emerald-400 flex items-center gap-2">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i> اختبار واختبارات الجودة (QA)
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            تقييم المكالمات والتذاكر والتأكد من مطابقتها مع معايير الجودة المعتمدة، واكتشاف نقاط التحسين وتدريب الفريق عليها.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: Contact Section -->
+        <section id="tab-contact" class="tab-content hidden space-y-8">
+            <div class="glass-card rounded-2xl p-6 md:p-10 text-center max-w-2xl mx-auto space-y-6">
+                <h2 class="text-2xl md:text-3xl font-extrabold text-white">تواصل معي مباشرة</h2>
+                <p class="text-slate-300 text-sm md:text-base">
+                    يمكنك التواصل معي للحصول على الـ CV الكامل أو لمناقشة فرص العمل والتعاون المباشر.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 pt-2">
+                    <a href="https://wa.me/201099017148" target="_blank" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl font-bold transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> واتساب: 01099017148
+                    </a>
+                    <a href="mailto:youssef.shref26@gmail.com" class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white rounded-xl font-bold transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-envelope text-lg"></i> البريد الإلكتروني
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-6 text-center text-xs text-slate-500">
+        <p>جميع الحقوق محفوظة © 2026 - يوسف شريف | Technical Support & QA Specialist</p>
+    </footer>
+
+    <!-- Tab Switching Script -->
+    <script>
+        function switchTab(tabId) {
+            // Hide all contents
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            // Remove active class from buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active', 'bg-blue-600', 'text-white', 'border-blue-500');
+                btn.classList.add('text-slate-400');
+            });
+
+            // Show current tab content
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+            // Highlight current button
+            const activeBtn = document.getElementById('btn-' + tabId);
+            activeBtn.classList.add('active', 'bg-blue-600', 'text-white', 'border-blue-500');
+            activeBtn.classList.remove('text-slate-400');
+        }
+    </script>
+</body>
+</html>
